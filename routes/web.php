@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactForm;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [ContactForm::class, 'index'])->name('contact-form');
 
 Route::middleware([
     'auth:sanctum',

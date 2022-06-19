@@ -1,5 +1,15 @@
 <div class="text-center mt-12">
-    <x-jet-input wire:model="firstName" class="mb-8" type="text" />
+    {{-- <x-jet-input wire:model.debounce.200ms="firstName" class="mb-8" type="text" /> --}}
+
+    {{-- <form action="">
+        <select wire:model.defer="firstName" name="firstName" id="">
+            <option value="Violet">Violet</option>
+            <option value="sheila">sheila</option>
+            <option value="lillian">lillian</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form> --}}
+    
     <h3
       class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2"
     >

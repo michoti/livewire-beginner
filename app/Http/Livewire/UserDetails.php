@@ -15,8 +15,8 @@ class UserDetails extends Component
         // $this->lastName = 'Kirui';
 
         $this->fill([
-            'firstName' => 'Consolata',
-            'lastName'  => 'Nyawira'
+            'firstName' => 'Deontay',
+            'lastName'  => 'Wilder'
         ]);
     }
     public function render()
