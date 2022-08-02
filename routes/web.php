@@ -17,14 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/cars', Car::class);
 
-Route::get('/', [ContactForm::class, 'index'])->name('contact-form');
+// Route::get('/', [ContactForm::class, 'index'])->name('contact-form');
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified'
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
-});
+// Route::middleware([
+//     'auth:sanctum',
+//     config('jetstream.auth_session'),
+//     'verified'
+// ])->group(function () {
+//     Route::get('/dashboard', function () {
+//         return view('dashboard');
+//     })->name('dashboard');
+// });
