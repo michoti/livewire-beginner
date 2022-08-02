@@ -1,5 +1,4 @@
 <form wire:submit.prevent='formSubmit' class="space-y-4">
-    {{ $name }}
     <div>
         <x-jet-label for="name" value="{{ __('Name') }}" />
         <x-jet-input wire:model='name' name="name" id="name" type="text" /> 

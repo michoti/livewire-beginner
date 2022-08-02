@@ -11,11 +11,11 @@ class ContactFormCode extends Component
     public $message;
     protected $rules = [
 
-        'name' => 'required|min:6',
+        'name' => 'required|max:60',
 
         'email' => 'required|email',
 
-        'message' => 'required|min:10',
+        'message' => 'required|max:200',
 
     ];
 

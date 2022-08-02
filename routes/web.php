@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ContactForm;
+use App\Http\Livewire\Car;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,9 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/cars', Car::class);
 
 Route::get('/', [ContactForm::class, 'index'])->name('contact-form');
 
